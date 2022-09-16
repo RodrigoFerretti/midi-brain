@@ -21,6 +21,7 @@ void loop()
     if (button_1.read())
     {
         midi_out.sendControlChange(11, 127, 1);
+        midi_out.sendControlChange(16, 127, 1);
     }
     if (button_2.read())
     {
